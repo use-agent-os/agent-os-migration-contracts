@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "chainId": "8453",
+  "createdAt": 1795534636000,
+  "meta": {
+    "name": "MigrationVault setRates (CAP 18.285, DACKIE 14.394)",
+    "description": "setRates on MigrationVault (Base): 1 CAP = 18.285 AGENTOS, 1 DACKIE = 14.394 AGENTOS, scaled by 1e18.",
+    "txBuilderVersion": "1.18.0",
+    "createdFromSafeAddress": "0xA14c94Ff5dd3C5c645c9c32c12b512C17579334D",
+    "createdFromOwnerAddress": ""
+  },
+  "transactions": [
+    {
+      "to": "0x581a4ee5D1Fc2A3cCB2c15057839dBCcAA8cc639",
+      "value": "0",
+      "data": "0xac6af280000000000000000000000000000000000000000000000000fdc15e9f36048000000000000000000000000000000000000000000000000000c7c1c2bcc0f90000",
+      "contractMethod": {
+        "inputs": [
+          { "internalType": "uint256", "name": "capRate_", "type": "uint256" },
+          { "internalType": "uint256", "name": "dackieRate_", "type": "uint256" }
+        ],
+        "name": "setRates",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "capRate_": "18285000000000000000",
+        "dackieRate_": "14394000000000000000"
+      }
+    }
+  ]
+}
