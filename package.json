@@ -1,0 +1,13 @@
+{
+  "name": "agentos-migration",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CAP + DACKIE (Base) -> AGENTOS (Robinhood) migration contracts (Foundry + pnpm)",
+  "scripts": {
+    "setup": "pnpm -r --filter ./projects/* run setup",
+    "build:all": "pnpm -r --filter ./projects/* run build",
+    "test:all": "pnpm -r --filter ./projects/* run test",
+    "fmt": "pnpm -r --filter ./projects/* run format",
+    "clean:all": "pnpm -r --filter ./projects/* run clean"
+  }
+}

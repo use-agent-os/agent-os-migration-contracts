@@ -1,0 +1,16 @@
+node_modules/
+**/out/
+**/cache/
+**/broadcast/
+**/lib/
+.env
+.env.*
+.idea/
+.DS_Store
+
+# Local operator guide (not committed)
+GUIDELINE.md
+
+# Generated claim data and Safe batches
+projects/migration/deployments/blocklist-*.json
+projects/migration/configs/blocklist.txt

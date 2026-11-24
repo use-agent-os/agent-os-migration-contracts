@@ -1,0 +1,33 @@
+{
+  "name": "@agentos/migration",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MigrationVault (Base) + MerkleVestingDistributor (Robinhood) for the CAP + DACKIE -> AGENTOS migration",
+  "scripts": {
+    "setup": "forge install --no-git foundry-rs/forge-std@v1.9.7 OpenZeppelin/openzeppelin-contracts@v5.4.0",
+    "build": "forge build",
+    "test": "forge test",
+    "test:verbose": "forge test -vvv",
+    "test:gas": "forge test --gas-report",
+    "test:fork": "forge test --match-path 'test/fork/*' -vv",
+    "test:ci": "FOUNDRY_PROFILE=ci forge test",
+    "format": "forge fmt",
+    "clean": "forge clean",
+    "test:offchain": "forge build && node --test offchain/test/*.test.mjs",
+    "claims:build": "node offchain/build-claims.mjs",
+    "tree:build": "node offchain/build-tree.mjs",
+    "tree:verify": "node offchain/verify-tree.mjs",
+    "longlock:check": "node offchain/check-longlock.mjs",
+    "twap:rates": "node offchain/twap-rates.mjs",
+    "blocklist:batches": "dotenv -e .env -- forge script scripts/BlocklistBatches.s.sol --rpc-url base",
+    "deploy:vault:base": "dotenv -e .env -- sh -c 'forge script scripts/DeployVault.s.sol --rpc-url base --account \"${DEPLOYER_ACCOUNT:?set DEPLOYER_ACCOUNT in .env}\" --broadcast'",
+    "deploy:distributor:robinhood": "dotenv -e .env -- sh -c 'forge script scripts/DeployDistributor.s.sol --rpc-url robinhood --account \"${DEPLOYER_ACCOUNT:?set DEPLOYER_ACCOUNT in .env}\" --broadcast'"
+  },
+  "dependencies": {
+    "@openzeppelin/merkle-tree": "1.0.8",
+    "viem": "2.21.55"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2"
+  }
+}

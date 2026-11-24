@@ -1,0 +1,71 @@
+{
+  "chainId": 31337,
+  "distributor": "0x00000000000000000000000000000000d157A1b0",
+  "claimStart": "1798675200",
+  "claimDeadline": "1806451200",
+  "root": "0x3af0ee3edd0005e22fde1211ead1460d379c9f07b1ba4bf78a1a08093beeed29",
+  "totalAllocation": "124500789012345678901234576",
+  "count": 6,
+  "sample": {
+    "account": "0x00000000000000000000000000000000000A11cE",
+    "allocation": "25500000000000000000000",
+    "proof": [
+      "0xd76f467133095531b1def1f991c17bd67cec04368bf15bfdcd4019fb969e334b",
+      "0xf8fa1e027676fd7cd729e261e805029115dbe1b0fd520b8214dec3d1078a3338"
+    ]
+  },
+  "claims": [
+    {
+      "account": "0x00000000000000000000000000000000000A11cE",
+      "allocation": "25500000000000000000000",
+      "proof": [
+        "0xd76f467133095531b1def1f991c17bd67cec04368bf15bfdcd4019fb969e334b",
+        "0xf8fa1e027676fd7cd729e261e805029115dbe1b0fd520b8214dec3d1078a3338"
+      ]
+    },
+    {
+      "account": "0x0000000000000000000000000000000000000B0b",
+      "allocation": "1000000000000000000000000",
+      "proof": [
+        "0xf4cecabb04377ab8d6af3dafc76907bf786ae918f27c4a0d926b0258ac58d284",
+        "0xf8fa1e027676fd7cd729e261e805029115dbe1b0fd520b8214dec3d1078a3338"
+      ]
+    },
+    {
+      "account": "0x000000000000000000000000000000000000C0de",
+      "allocation": "18500000000000000000001",
+      "proof": [
+        "0xcbb075e3edea13e96c08b99dc8866744ae7762b075bfefb7230df92d168822ee",
+        "0x407ab69af6194f842a4bb20b7e25e0f2a8b9d05592deecb50c699feda61c9474",
+        "0x5090799db130743a9ee8a04dcfe9ab0f837bdc04fb808307f6a4c6a76ee35230"
+      ]
+    },
+    {
+      "account": "0x000000000000000000000000000000000000dEaD",
+      "allocation": "7",
+      "proof": [
+        "0x6c573f27a99f7fbe14dcc7ec70b8ff46cb8069f22e2e7853fbce2a7bbf8d1690",
+        "0x407ab69af6194f842a4bb20b7e25e0f2a8b9d05592deecb50c699feda61c9474",
+        "0x5090799db130743a9ee8a04dcfe9ab0f837bdc04fb808307f6a4c6a76ee35230"
+      ]
+    },
+    {
+      "account": "0x000000000000000000000000000000000000bEEF",
+      "allocation": "123456789012345678901234567",
+      "proof": [
+        "0x3a47458a49f2ec3dfc64a4d94f1d532745d6a0ad4e746dc968355212bb92dd41",
+        "0x6829f5014ce191d1b7862f05a4e7741180d979f58a1c8c1a8546fc1fa84cacde",
+        "0x5090799db130743a9ee8a04dcfe9ab0f837bdc04fb808307f6a4c6a76ee35230"
+      ]
+    },
+    {
+      "account": "0x000000000000000000000000000000000000FACE",
+      "allocation": "1",
+      "proof": [
+        "0x16c3f5f031b6b52d4eaed756628912772a73524102bcab54d5406cabc19a1bae",
+        "0x6829f5014ce191d1b7862f05a4e7741180d979f58a1c8c1a8546fc1fa84cacde",
+        "0x5090799db130743a9ee8a04dcfe9ab0f837bdc04fb808307f6a4c6a76ee35230"
+      ]
+    }
+  ]
+}
